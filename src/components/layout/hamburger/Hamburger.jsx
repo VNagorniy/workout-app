@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { CgMenuRight } from 'react-icons/cg'
 import { IoClose } from 'react-icons/io5'
 
@@ -15,7 +14,7 @@ const Hamburger = () => {
 			<button onClick={() => setIsShow(!isShow)}>
 				{isShow ? <IoClose /> : <CgMenuRight />}
 			</button>
-			<Menu isShow={isShow} />
+			<Menu isShow={isShow} setIsShow={setIsShow} />
 		</div>
 	)
 }
