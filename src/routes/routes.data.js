@@ -28,7 +28,6 @@ export const routes = [
 	},
 	{
 		path: '/new-exercise',
-
 		component: NewExercise,
 		isAuth: true
 	}
